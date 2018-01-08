@@ -1,0 +1,8 @@
+{
+  "CONSUMER_KEY": "",
+  "CONSUMER_SECRET": "",
+  "KINDLE_BOT": {
+      "OAUTH_TOKEN": "",
+      "OAUTH_TOKEN_SECRET": ""
+  }
+}

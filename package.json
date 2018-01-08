@@ -1,0 +1,37 @@
+{
+  "name": "fandou",
+  "version": "0.1.0",
+  "scripts": {
+    "front:build": "webpack",
+    "front:dev": "webpack-dev-server",
+    "back:dev": "NODE_ENV=test pm2 start back-end/app.js --watch --name=kfan-dev",
+    "back:exit": "pm2 stop kfan-dev --watch 0 && pm2 delete kfan-dev",
+    "test": "standard"
+  },
+  "repository": "git@github.com:fanfoujs/fandou.git",
+  "authors": [
+    "LitoMore <litomore@gmail.com>",
+    "Sheldon <hey@nowtiny.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "babel-loader": "^8.0.0-beta.0",
+    "css-loader": "^0.28.7",
+    "pm2": "^2.9.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "standard": "^10.0.3",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "fanfou-sdk": "^2.6.1",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.3.0"
+  }
+}
