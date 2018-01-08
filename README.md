@@ -1,3 +1,5 @@
+<img width="100px" height="100px" src="https://raw.githubusercontent.com/fanfoujs/fandou/master/logo.png" align="right" />
+
 # Fandou
 
 Fanfou for Kindle
