@@ -1,4 +1,4 @@
-<img width="100px" height="100px" src="https://raw.githubusercontent.com/fanfoujs/fandou/master/logo.png" align="right" />
+<img width="75px" height="75px" src="https://raw.githubusercontent.com/fanfoujs/fandou/master/logo.png" align="right" />
 
 # Fandou
 
