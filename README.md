@@ -4,14 +4,15 @@
 
 Fanfou for Kindle
 
-## Team
-
-- [@Sheldon](http://nowtiny.com)
-- [@LitoMore](https://github.com/LitoMore)
-
 ## Related
 
 - [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node) - Fanfou SDK for Node.js
+
+## Team
+
+- [@LitoMore](https://github.com/LitoMore)
+- [@Sheldon](http://nowtiny.com)
+- [@mogita](https://github.com/mogita)
 
 ## License
 
