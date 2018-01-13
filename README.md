@@ -11,7 +11,7 @@ Fanfou for Kindle
 ## Team
 
 - [@LitoMore](https://github.com/LitoMore)
-- [@Sheldon](http://nowtiny.com)
+- [@sheldonrrr](http://nowtiny.com)
 - [@mogita](https://github.com/mogita)
 
 ## License
