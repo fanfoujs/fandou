@@ -2,6 +2,12 @@
 
 # Fandou
 
+[![](https://badges.greenkeeper.io/fanfoujs/fandou.svg)](https://greenkeeper.io)
+[![](https://img.shields.io/travis/fanfoujs/fandou/master.svg)](https://travis-ci.org/fanfoujs/fandou)
+[![](https://img.shields.io/github/release/fanfoujs/fandou.svg)](https://github.com/fanfoujs/fandou/releases)
+[![](https://img.shields.io/github/license/fanfoujs/fandou.svg)](https://github.com/fanfoujs/fandou/blob/master/LICENSE)
+[![](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 Fanfou for Kindle
 
 <div align="center"><img width="75%" height="75%" src="https://raw.githubusercontent.com/fanfoujs/fandou/master/screenshot.png" /></div>
