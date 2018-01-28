@@ -43,6 +43,8 @@
       "import/no-unassigned-import": [2, {
         "allow": ["**/style/*.css"]
       }]
-    }
+    },
+    "semicolon": false,
+    "space": 2
   }
 }
