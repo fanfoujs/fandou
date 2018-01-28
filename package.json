@@ -6,7 +6,7 @@
     "front:dev": "webpack-dev-server",
     "back:dev": "NODE_ENV=test pm2 start back-end/app.js --watch --name=kfan-dev",
     "back:exit": "pm2 stop kfan-dev --watch 0 && pm2 delete kfan-dev",
-    "test": "standard"
+    "test": "xo"
   },
   "repository": "git@github.com:fanfoujs/fandou.git",
   "authors": [
@@ -20,18 +20,29 @@
     "@babel/preset-react": "^7.0.0-beta.36",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^0.28.7",
+    "eslint-config-xo-react": "^0.15.0",
+    "eslint-plugin-react": "^7.6.0",
     "pm2": "^2.9.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "standard": "^10.0.3",
     "style-loader": "^0.20.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.9.7",
+    "xo": "^0.18.2"
   },
   "dependencies": {
     "fanfou-sdk": "^2.6.1",
     "koa": "^2.4.1",
     "koa-body": "^2.5.0",
     "koa-router": "^7.3.0"
+  },
+  "xo": {
+    "envs": ["node", "browser"],
+    "extends": ["xo-react"],
+    "rules": {
+      "import/no-unassigned-import": [2, {
+        "allow": ["**/style/*.css"]
+      }]
+    }
   }
 }
