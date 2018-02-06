@@ -15,7 +15,12 @@ const {
 
 const Fanfou = {}
 
-Fanfou.authorize = (username, password) => {
+Fanfou.authorize = params => {
+  const {
+    username = '',
+    password = ''
+  } = params
+
   return new Promise(resolve => {
     const ff = new FanfouSDK({
       authType: 'xauth',
@@ -34,7 +39,13 @@ Fanfou.authorize = (username, password) => {
   })
 }
 
-Fanfou.compose = (oauthToken, oauthTokenSecret, status) => {
+Fanfou.compose = params => {
+  const {
+    oauthToken = '',
+    oauthTokenSecret = '',
+    status = ''
+  } = params
+
   return new Promise(resolve => {
     const ff = new FanfouSDK({
       consumerKey,
@@ -46,6 +57,31 @@ Fanfou.compose = (oauthToken, oauthTokenSecret, status) => {
       if (err) {
         resolve({error: err.message})
       }	else {
+        resolve(res)
+      }
+    })
+  })
+}
+
+Fanfou.repost = params => {
+  const {
+    oauthToken = '',
+    oauthTokenSecret = '',
+    status = '',
+    repost_status_id = ''
+  } = params
+
+  return new Promise(resolve => {
+    const ff = new FanfouSDK({
+      consumerKey,
+      consumerSecret,
+      oauthToken,
+      oauthTokenSecret
+    })
+    ff.post('/statuses/update', {status, repost_status_id}, (err, res) => {
+      if (err) {
+        resolve({error: err.message})
+      } else {
         resolve(res)
       }
     })

@@ -40,6 +40,7 @@
     "envs": ["node", "browser"],
     "extends": ["xo-react"],
     "rules": {
+      "camelcase": 0,
       "import/no-unresolved": 0,
       "import/no-unassigned-import": [2, {
         "allow": ["**/style/*.css"]
