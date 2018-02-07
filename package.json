@@ -23,6 +23,7 @@
     "eslint-config-xo-react": "^0.16.0",
     "eslint-plugin-react": "^7.6.0",
     "pm2": "^2.9.1",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "style-loader": "^0.20.1",
@@ -37,14 +38,24 @@
     "koa-router": "^7.3.0"
   },
   "xo": {
-    "envs": ["node", "browser"],
-    "extends": ["xo-react"],
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "extends": [
+      "xo-react"
+    ],
     "rules": {
       "camelcase": 0,
       "import/no-unresolved": 0,
-      "import/no-unassigned-import": [2, {
-        "allow": ["**/style/*.css"]
-      }]
+      "import/no-unassigned-import": [
+        2,
+        {
+          "allow": [
+            "**/style/*.css"
+          ]
+        }
+      ]
     },
     "semicolon": false,
     "space": 2
