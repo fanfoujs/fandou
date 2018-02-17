@@ -54,7 +54,8 @@
         2,
         {
           "allow": [
-            "**/style/*.css"
+            "**/style/*.css",
+            "**/*.css"
           ]
         }
       ]
