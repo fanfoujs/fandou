@@ -1,7 +1,7 @@
 'use strict'
 
 import React from 'react'
-import './inline-popup.css'
+import './radio-list.css'
 
 class RadioList extends React.Component {
   render() {
