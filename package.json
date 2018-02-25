@@ -20,7 +20,7 @@
     "@babel/preset-react": "^7.0.0-beta.36",
     "ava": "^0.25.0",
     "babel-loader": "^8.0.0-beta.0",
-    "css-loader": "^0.28.7",
+    "css-loader": "^0.28.10",
     "deep-keys": "^0.5.0",
     "eslint-config-xo-react": "^0.16.0",
     "eslint-plugin-react": "^7.6.0",
@@ -29,9 +29,10 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "style-loader": "^0.20.1",
-    "webpack": "^3.10.0",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.8",
     "webpack-dev-server": "^2.9.7",
-    "xo": "^0.20.0"
+    "xo": "^0.20.3"
   },
   "dependencies": {
     "fanfou-sdk": "^2.6.1",
