@@ -32,7 +32,7 @@
     "webpack": "^4.0.0",
     "webpack-cli": "^2.0.8",
     "webpack-dev-server": "^3.0.0",
-    "xo": "^0.20.3"
+    "xo": "^0.21.0"
   },
   "dependencies": {
     "fanfou-sdk": "^2.6.1",
