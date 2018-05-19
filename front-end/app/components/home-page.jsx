@@ -1,13 +1,13 @@
 'use strict'
 
 import React from 'react'
+import Api from '../api'
 import ToolBar from './tool-bar.jsx'
 
 class HomePage extends React.Component {
   render() {
-    return (
-      <ToolBar/>
-    )
+    Api.preview().then(res => console.log(res))
+    return <ToolBar/>
   }
 }
 
