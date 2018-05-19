@@ -3,6 +3,7 @@
 const Koa = require('koa')
 const koaBody = require('koa-body')
 const Router = require('koa-router')
+const cors = require('@koa/cors')
 
 const pkg = require('../package')
 const Fanfou = require('./utils/fanfou')
@@ -31,8 +32,13 @@ router
     const result = await Fanfou.timeline()
     ctx.body = result
   })
+  .get('/api/preview', async ctx => {
+    const result = await Fanfou.preview()
+    ctx.body = result
+  })
 
 app
+  .use(cors())
   .use(router.routes())
   .use(router.allowedMethods())
 

@@ -96,10 +96,28 @@ Fanfou.timeline = () => {
       oauthToken: botToken,
       oauthTokenSecret: botTokenSecret
     })
-    ff.post('/statuses/home_timeline', {format: 'html'}, (err, res) => {
+    ff.get('/statuses/home_timeline', {format: 'html'}, (err, res) => {
       if (err) {
         resolve({error: err.message})
       }	else {
+        resolve(res)
+      }
+    })
+  })
+}
+
+Fanfou.preview = () => {
+  return new Promise(resolve => {
+    const ff = new FanfouSDK({
+      consumerKey,
+      consumerSecret,
+      oauthToken: botToken,
+      oauthTokenSecret: botTokenSecret
+    })
+    ff.get('/statuses/public_timeline', {format: 'html'}, (err, res) => {
+      if (err) {
+        resolve({error: err.message})
+      } else {
         resolve(res)
       }
     })
