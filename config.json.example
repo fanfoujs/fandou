@@ -4,5 +4,6 @@
   "KINDLE_BOT": {
       "OAUTH_TOKEN": "",
       "OAUTH_TOKEN_SECRET": ""
-  }
+  },
+  "BASE_ENDPOINT": "http://localhost:3000/api/"
 }
