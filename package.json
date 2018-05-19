@@ -26,7 +26,7 @@
     "eslint-config-xo": "^0.22.2",
     "eslint-config-xo-react": "^0.16.0",
     "eslint-plugin-react": "^7.6.0",
-    "pm2": "^2.9.1",
+    "pm2": "^2.10.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
