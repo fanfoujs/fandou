@@ -3,7 +3,7 @@
 const path = require('path')
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: path.join(__dirname, 'front-end/app/main.jsx'),
   output: {
     path: path.join(__dirname, 'front-end/build'),
@@ -17,6 +17,7 @@ module.exports = {
         exclude: '/node_modules/',
         query: {
           presets: [
+            '@babel/preset-env',
             '@babel/preset-react'
           ]
         }

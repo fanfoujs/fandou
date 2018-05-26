@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "front:build": "webpack",
-    "front:dev": "webpack-dev-server",
+    "front:dev": "webpack-dev-server --host 0.0.0.0",
     "back:dev": "NODE_ENV=test pm2 start back-end/app.js --watch --name=kfan-dev",
     "back:exit": "pm2 stop kfan-dev --watch 0 && pm2 delete kfan-dev",
     "test": "xo"
