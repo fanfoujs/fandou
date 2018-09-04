@@ -12,10 +12,10 @@ const app = new Koa()
 const router = new Router()
 
 router
-  .get('/api', async ctx => {
+  .get('/api', ctx => {
     ctx.body = 'Fanfou for Kindle'
   })
-  .get('/api/package', async ctx => {
+  .get('/api/package', ctx => {
     ctx.body = pkg
   })
   .post('/api/authorize', koaBody(), async ctx => {

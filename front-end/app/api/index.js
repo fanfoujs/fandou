@@ -9,7 +9,7 @@ const api = axios.create({
 })
 
 export default {
-  preview: async () => {
+  preview: () => {
     return api.get('/preview')
   }
 }
