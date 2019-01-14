@@ -26,7 +26,7 @@
     "deep-keys": "^0.5.0",
     "eslint": "^5.3.0",
     "eslint-config-xo": "^0.26.0",
-    "eslint-config-xo-react": "^0.17.0",
+    "eslint-config-xo-react": "^0.18.0",
     "eslint-plugin-react": "^7.11.1",
     "pm2": "^3.0.0",
     "prop-types": "^15.6.2",
@@ -36,7 +36,7 @@
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
-    "xo": "^0.23.0"
+    "xo": "^0.24.0"
   },
   "dependencies": {
     "@koa/cors": "^2.2.2",
@@ -70,5 +70,8 @@
     },
     "semicolon": false,
     "space": 2
+  },
+  "react": {
+    "version": "16.x"
   }
 }
