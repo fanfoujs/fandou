@@ -7,5 +7,5 @@ import './style/main.css'
 
 ReactDOM.render(
   <HomePage/>,
-  document.getElementById('root')
+  document.querySelector('#root')
 )
