@@ -33,7 +33,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "style-loader": "^0.23.0",
-    "webpack": "^4.27.1",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "xo": "^0.24.0"
